@@ -29,4 +29,4 @@ desktop.ini
 
 # Virtual environments
 venv/
-./.idea
+.idea/
