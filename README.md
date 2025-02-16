@@ -16,9 +16,22 @@ Link to the original repo with tracked commits: [here](https://github.com/StanDo
 ## How to recreate results:
 
 1. Ensure you have installed docker, ubuntu wsl and activated Docker WSL integration;
-2. Clone the repo: ```bash git clone https://github.com/StanDobrev11/DRL-for-COLREG-Compliant-ASV-Simulation/```;
-3. In the repo folder, run ```bash wsl``` followed by ```bash docker-compose up -d --build```
-4. Once the image is build and up, execute ```bash docker-compose logs```
+2. Clone the repo:
+```bash 
+git clone https://github.com/StanDobrev11/DRL-for-COLREG-Compliant-ASV-Simulation/
+```
+3. In the repo folder, run:
+```bash
+wsl
+```
+followed by:
+```bash 
+docker-compose up -d --build
+```
+4. Once the image is build and up, execute:
+```bash
+ docker-compose logs
+```
 5. The above printed logs will have a line similar to:
 ```bash
 pytorch-1  |     To access the server, open this file in a browser:
