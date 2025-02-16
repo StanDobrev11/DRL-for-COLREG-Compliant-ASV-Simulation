@@ -33,7 +33,7 @@ docker-compose up -d --build
  docker-compose logs
 ```
 5. The above printed logs will have a line similar to:
-```bash
+```
 pytorch-1  |     To access the server, open this file in a browser:
 pytorch-1  |         file:///root/.local/share/jupyter/runtime/jpserver-7-open.html
 pytorch-1  |     Or copy and paste one of these URLs:
