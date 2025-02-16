@@ -12,3 +12,20 @@ By leveraging a structured reward function, the ASV learns collision avoidance b
 Jupyter notebook - Project.ipynb
 
 Link to the original repo with tracked commits: [here](https://github.com/StanDobrev11/DeepLearning/blob/master/ProjectNew/)
+
+## How to recreate results:
+
+1. Ensure you have installed docker, ubuntu wsl and activated Docker WSL integration;
+2. Clone the repo: ```bash git clone https://github.com/StanDobrev11/DRL-for-COLREG-Compliant-ASV-Simulation/```;
+3. In the repo folder, run ```bash wsl``` followed by ```bash docker-compose up -d --build```
+4. Once the image is build and up, execute ```bash docker-compose logs```
+5. The above printed logs will have a line similar to:
+```bash
+pytorch-1  |     To access the server, open this file in a browser:
+pytorch-1  |         file:///root/.local/share/jupyter/runtime/jpserver-7-open.html
+pytorch-1  |     Or copy and paste one of these URLs:
+pytorch-1  |         http://315d8b73b3aa:8888/lab?token=13636829fd2c8f3e948392078997844d1f7ef72628f3c8c2
+pytorch-1  |         http://127.0.0.1:8888/lab?token=13636829fd2c8f3e948392078997844d1f7ef72628f3c8c2
+```
+6. Click on the last http link to run jupyter lab and access the project notebook.
+7. Enjoy!
