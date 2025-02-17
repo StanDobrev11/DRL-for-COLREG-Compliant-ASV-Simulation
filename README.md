@@ -28,7 +28,7 @@ followed by:
 ```bash 
 docker-compose up -d --build
 ```
-4. Once the image is build and up, execute:
+4. Once the image has been built and up, execute:
 ```bash
  docker-compose logs
 ```
