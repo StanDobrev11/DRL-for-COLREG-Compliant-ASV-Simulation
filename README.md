@@ -32,7 +32,7 @@ To provide an intuitive representation of ship movements:
 - Purple ring → Displays the Closest Point of Approach (CPA) limit set for collision avoidance (default: 1 NM).
 - White track line → Shows the historical path (trace) of the own ship, allowing for trajectory analysis.
 - Blue track lines → Represent the path history of target ships, illustrating their movement over time.
-================================================================================================================
+
 Jupyter notebook - Project.ipynb
 
 Link to the original repo with tracked commits: [here](https://github.com/StanDobrev11/DeepLearning/blob/master/ProjectNew/)
