@@ -9,9 +9,36 @@ This study presents a partially implemented COLREG-compliant ASV simulation, whe
 
 By leveraging a structured reward function, the ASV learns collision avoidance behaviors without predefined path-following rules, demonstrating an emergent compliance with fundamental COLREG principles. The study provides insights into the effectiveness of reinforcement learning in maritime navigation and highlights the potential and limitations of a purely reward-driven training paradigm. Further improvements and extensions, including enhanced optimization strategies and real-world applicability, are discussed as part of future work.
 
+### Assumptions and Limitations
+This study makes several simplifying assumptions to focus on reinforcement learning-based collision avoidance without additional complexity:
+
+Ship dynamics are ignored – The ASV's maneuvering characteristics, such as acceleration, turning radius, and inertia, are not explicitly modeled. The vessel is assumed to change course and speed instantly without delay.
+Environmental dynamics are ignored – External factors like wind, currents, and waves are not considered in the simulation. The focus is solely on collision avoidance in an idealized static environment.
+Target dynamics are stripped to basics - maintaining course and speed.
+Limited scope due to time and complexity – Implementing full COLREG compliance in an RL-based agent is highly complex and time-consuming. Therefore, this research prioritizes the fundamental rules of collision avoidance and waypoint navigation.
+By defining these constraints, this study aims to analyze how reinforcement learning alone, without traditional waypoint-tracking algorithms or cross-track error corrections, can develop COLREG-compliant behavior in an ASV. The results provide a foundation for future improvements and real-world applications.
+
+### Video Rendering and Visualization
+#### 3.6.1 Visualization Elements
+- White dot → Represents the own ship (ASV).
+- Green dot → Represents the waypoint (WP), the ASV’s navigation goal.
+- Blue dots → Represent the target ships, which may be moving or static obstacles.
+#### 3.6.2 Motion Vectors
+To provide an intuitive representation of ship movements:
+
+- Red line → Represents the own ship’s heading vector, with its length scaled to the ASV’s speed in knots.
+- Blue line → Represents the heading vector of target ships, similarly scaled to target speed.
+#### 3.6.3 Tracking and CPA Visualization
+- Purple ring → Displays the Closest Point of Approach (CPA) limit set for collision avoidance (default: 1 NM).
+- White track line → Shows the historical path (trace) of the own ship, allowing for trajectory analysis.
+- Blue track lines → Represent the path history of target ships, illustrating their movement over time.
+================================================================================================================
 Jupyter notebook - Project.ipynb
 
 Link to the original repo with tracked commits: [here](https://github.com/StanDobrev11/DeepLearning/blob/master/ProjectNew/)
+
+Link to youtube with uploaded video recordings of the training, default hyperparams agent acting and fine-tuned agent acting [here](https://youtube.com/@stanislavdobrev1369?si=eoqJwwWJWi6KfCqi)
+
 
 ## How to recreate results:
 
