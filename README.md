@@ -12,10 +12,11 @@ By leveraging a structured reward function, the ASV learns collision avoidance b
 ### Assumptions and Limitations
 This study makes several simplifying assumptions to focus on reinforcement learning-based collision avoidance without additional complexity:
 
-Ship dynamics are ignored – The ASV's maneuvering characteristics, such as acceleration, turning radius, and inertia, are not explicitly modeled. The vessel is assumed to change course and speed instantly without delay.
-Environmental dynamics are ignored – External factors like wind, currents, and waves are not considered in the simulation. The focus is solely on collision avoidance in an idealized static environment.
-Target dynamics are stripped to basics - maintaining course and speed.
+- **Ship dynamics are ignored** – The ASV's maneuvering characteristics, such as acceleration, turning radius, and inertia, are not explicitly modeled. The vessel is assumed to change course and speed instantly without delay.
+- **Environmental dynamics are ignored** – External factors like wind, currents, and waves are not considered in the simulation. The focus is solely on collision avoidance in an idealized static environment.
+- **Target dynamics are stripped to basics** - maintaining course and speed.
 Limited scope due to time and complexity – Implementing full COLREG compliance in an RL-based agent is highly complex and time-consuming. Therefore, this research prioritizes the fundamental rules of collision avoidance and waypoint navigation.
+
 By defining these constraints, this study aims to analyze how reinforcement learning alone, without traditional waypoint-tracking algorithms or cross-track error corrections, can develop COLREG-compliant behavior in an ASV. The results provide a foundation for future improvements and real-world applications.
 
 ### Video Rendering and Visualization
