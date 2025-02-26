@@ -19,16 +19,16 @@ Limited scope due to time and complexity – Implementing full COLREG compliance
 By defining these constraints, this study aims to analyze how reinforcement learning alone, without traditional waypoint-tracking algorithms or cross-track error corrections, can develop COLREG-compliant behavior in an ASV. The results provide a foundation for future improvements and real-world applications.
 
 ### Video Rendering and Visualization
-#### 3.6.1 Visualization Elements
+#### Visualization Elements
 - White dot → Represents the own ship (ASV).
 - Green dot → Represents the waypoint (WP), the ASV’s navigation goal.
 - Blue dots → Represent the target ships, which may be moving or static obstacles.
-#### 3.6.2 Motion Vectors
+#### Motion Vectors
 To provide an intuitive representation of ship movements:
 
 - Red line → Represents the own ship’s heading vector, with its length scaled to the ASV’s speed in knots.
 - Blue line → Represents the heading vector of target ships, similarly scaled to target speed.
-#### 3.6.3 Tracking and CPA Visualization
+#### Tracking and CPA Visualization
 - Purple ring → Displays the Closest Point of Approach (CPA) limit set for collision avoidance (default: 1 NM).
 - White track line → Shows the historical path (trace) of the own ship, allowing for trajectory analysis.
 - Blue track lines → Represent the path history of target ships, illustrating their movement over time.
